@@ -11,9 +11,7 @@ model = load_model(MODEL_FOLDER)
 
 
 def predict(image_file):
-    test_image = image.load_img(
-        image_file,
-        target_size=(128, 128))
+    test_image = image.load_img(image_file,target_size=(128, 128))
     test_image = image.img_to_array(test_image)
 
     test_image = np.expand_dims(test_image, axis=0)
