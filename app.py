@@ -19,7 +19,7 @@ def upload_predict():
     if request.method == 'POST':
         image_file = request.files['image']
         if image_file:
-            image_location = os.path.join(UPLOAD_FOLDER, image_file.filename)
+            image_location = UPLOAD_FOLDER +'/' + image_file.filename
             #print(image_location)
             image_file.save(image_location)
             status = predict(image_location)
