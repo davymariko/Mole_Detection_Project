@@ -6,7 +6,7 @@ import os
 # from preprocess.preprocessing import test_generator
 PATH_MODEL = os.getcwd()
 
-MODEL_FOLDER = PATH_MODEL +'\\model\\mole_detector.h5'
+MODEL_FOLDER = PATH_MODEL +'/model/mole_detector.h5'
 model = load_model(MODEL_FOLDER)
 
 
