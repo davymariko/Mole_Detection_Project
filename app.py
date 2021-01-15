@@ -4,7 +4,7 @@ from predict.predicting import predict
 app = Flask(__name__)
 PATH = os.getcwd()
 
-UPLOAD_FOLDER = PATH+'\\static'
+UPLOAD_FOLDER = PATH+'/static'
 print(UPLOAD_FOLDER)
 
 
